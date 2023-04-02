@@ -4,64 +4,65 @@
   <meta charset="UTF-8">
   <title>Employee Dashboard</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Bootstrap JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
 <body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Logo or brand name -->
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Employee Dashboard</a>
-    </div>
-    <!-- Navigation links -->
-    <ul class="nav navbar-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Settings</a></li>
-    </ul>
-  </div>
-</nav>
-
-<div class="container-fluid">
-  <div class="row">
-    <!-- Sidebar -->
-    <div class="col-sm-3 col-md-2 sidebar">
-      <ul class="nav nav-sidebar nav-pills">
-        <li><a href="#dashboard">Dashboard</a></li>
-        <li><a href="#employees">Employees</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#reports">Reports</a></li>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Employee Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Attendance</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Apply for Leave</a>
+        </li>
       </ul>
     </div>
-    <!-- Main content -->
-    <div class="col-sm-9 col-md-10 main">
-      <!-- Dashboard section -->
-      <section id="dashboard">
-        <h1>Dashboard</h1>
-        <!-- Dashboard content goes here -->
-      </section>
-      <!-- Employees section -->
-      <section id="employees">
-        <h1>Employees</h1>
-        <!-- Employees content goes here -->
-      </section>
-      <!-- Projects section -->
-      <section id="projects">
-        <h1>Projects</h1>
-        <!-- Projects content goes here -->
-      </section>
-      <!-- Reports section -->
-      <section id="reports">
-        <h1>Reports</h1>
-        <!-- Reports content goes here -->
-      </section>
-    </div>
-  </div>
-</div>
+  </nav>
 
+  <!-- Dashboard -->
+  <div class="container my-4">
+    <h1>Dashboard</h1>
+    <p>Welcome to your employee dashboard.</p>
+  </div>
+
+  <!-- Attendance -->
+  <div class="container my-4">
+    <h1>Attendance</h1>
+    <p>You have attended 20 out of 22 working days this month.</p>
+  </div>
+
+  <!-- Apply for Leave -->
+  <div class="container my-4">
+    <h1>Apply for Leave</h1>
+    <form>
+      <div class="form-group">
+        <label for="startDate">Start Date</label>
+        <input type="date" class="form-control" id="startDate">
+      </div>
+      <div class="form-group">
+        <label for="endDate">End Date</label>
+        <input type="date" class="form-control" id="endDate">
+      </div>
+      <div class="form-group">
+        <label for="reason">Reason</label>
+        <textarea class="form-control" id="reason" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
