@@ -1,1 +1,2 @@
-# Leave-Management-Syatem
+# Leave-Management-System
+
