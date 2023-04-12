@@ -38,7 +38,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">      
-                          <a href="Login.php" class="btn btn-dred btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Login<br />Employee <span class="glyphicon glyphicon"></span></a>
+                          <!-- <a href="/Employee/Login.php" class="btn btn-dred btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Login<br />Employee <span class="glyphicon glyphicon"></span></a> -->
                           <a href="Logout.php" class="btn btn-dred btn-lg" role="button"><span class="glyphicon glyphicon-user glyphsize"></span> <br />Logout<br />Amdin <span class="glyphicon glyphicon"></span></a>
                         </div>
                     </div>
